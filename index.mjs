@@ -17,6 +17,18 @@ const execute = async () => {
         
         // Create the cauldron of potions
         const cauldron = new Cauldron(ingredients);
+
+        const potion1 = cauldron.createPotion("Bear Claws", "Bee");
+        showPotion(potion1);
+
+        const potion2 = cauldron.createPotion("Chicken's Egg", "Chaurus Eggs");
+        showPotion(potion2);
+
+        const potion3 = cauldron.createPotion("Chaurus Eggs", "Bleeding Crown");
+        showPotion(potion3);
+
+        const potion4 = cauldron.createPotion("Nightshade", "Ectoplasm");
+        showPotion(potion4);
         
 
     } catch (error) {
@@ -54,4 +66,15 @@ export function showIngredients(ingredients) {
         
         
     }
+}
+
+function showPotion(potion) {
+    console.log(`${potion.name}`);
+    console.log(`Value:          ${potion.value} `);
+    console.log(`Weight:         ${potion.weight}  `);
+    console.log(`Time:           ${potion.time} `);
+    console.log(`-------------------------------------------------------`);
+    
+    
+    
 }
