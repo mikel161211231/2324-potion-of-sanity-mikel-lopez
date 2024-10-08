@@ -18,4 +18,16 @@ export class Ingredient {
             weight
         ));
     }
+
+    hasName(name){
+        return (this.name === name);
+    }
+
+    findCommonEffects(otherIngredient){
+        return(this.effects.filter(effect => otherIngredient.hasEffect(effect)))
+    }
+
+    hasEffect(effect){
+        return (this.effects.some(candidate => effect.name === candidate.name))
+    }
 }
