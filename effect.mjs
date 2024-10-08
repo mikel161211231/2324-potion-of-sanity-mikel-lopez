@@ -3,7 +3,7 @@
 const positive_effect_tokens = ["Fortify", "Resist", "Cure", "Restore", "Regenerate", "Invisibility", "Waterbreathing"];
 
 
-class Effect {
+export class Effect {
     constructor(name, type) {
         this.name = name;
         this.type = type;
