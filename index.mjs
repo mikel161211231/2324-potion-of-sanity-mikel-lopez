@@ -18,6 +18,8 @@ const execute = async () => {
         
         // Create the cauldron of potions
         const cauldron = new Cauldron(ingredients);
+        console.log(cauldron);
+        
 
         const potion1 = cauldron.createPotion('Bear Claws', 'Bee');
         showPotion(potion1);
