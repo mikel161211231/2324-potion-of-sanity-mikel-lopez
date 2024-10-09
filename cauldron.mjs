@@ -5,6 +5,8 @@ export class Cauldron {
 
     constructor(ingredients) {
         this.ingredients = ingredients;
+     
+        
     }
 
     createPotion(ingredient_name1, ingredient_name2){

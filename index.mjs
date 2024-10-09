@@ -1,7 +1,7 @@
 import { Cauldron } from "./cauldron.mjs";
 import { Ingredients } from "./ingredients.mjs";
+import { dataI } from "./ingredientsData.mjs";
 import { getData } from "./service.mjs";
-
 
 
 
@@ -9,16 +9,18 @@ const execute = async () => {
 
     try {
         
-        const data = await getData();
+        // const data =  dataI;//await getData();
+        const data =  await getData();
 
         // Create the ingredients
         const ingredients = Ingredients.load(data);
 
+        // console.log(ingredients);
         
         // Create the cauldron of potions
         const cauldron = new Cauldron(ingredients);
 
-        const potion1 = cauldron.createPotion("Bear Claws", "Bee");
+        const potion1 = cauldron.createPotion('Bear Claws', 'Bee');
         showPotion(potion1);
 
         const potion2 = cauldron.createPotion("Chicken's Egg", "Chaurus Eggs");
