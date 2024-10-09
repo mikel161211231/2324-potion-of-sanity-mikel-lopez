@@ -11,7 +11,7 @@ export class Ingredient {
     }
 
     static from(ingredient){
-        console.log(ingredient.name);
+        
         
         return(new Ingredient(
             ingredient.name,

@@ -33,5 +33,5 @@ export class Cauldron {
 }
 
 function isPotionOfSanity(i1, i2) {
-    return( ((i1.name === "Nightshade") && (i1.name === "Ectoplasm"))  || (i2.name === "Nightshade") && (i1.name === "Ectoplasm") ? true : false);
+    return( ((i1.name === "Nightshade") && (i2.name === "Ectoplasm"))  || (i2.name === "Nightshade") && (i1.name === "Ectoplasm") ? true : false);
 }

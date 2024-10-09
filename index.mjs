@@ -1,6 +1,5 @@
 import { Cauldron } from "./cauldron.mjs";
 import { Ingredients } from "./ingredients.mjs";
-import { dataI } from "./ingredientsData.mjs";
 import { getData } from "./service.mjs";
 
 
